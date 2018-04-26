@@ -1,4 +1,41 @@
+.c-top
+	.c-inner
+		.c-top__nav
+			ul
+				li
+					a(href="#") FAQ
+				li
+					a(href="#") ayuda@estarbien.com
+				li
+					a(href="#") Terminos y condiciones
+				li
+					a(href="#") Mi cuenta
 header.c-header
-	a.c-header__brand(href="#")
-		img.c-header__image(src="", alt="")
+	.c-header__top
+		.c-header__inner
+			.c-header__brand
+				img(src="img/header-logo.png", alt="Laboratorios Saval")
+			.c-header__boxSearch
+				.c-header__email
+					span
+					p Email :  Ayuda@estarbien.com				
+				.c-header__phone
+					span
+					p Tel :  +(56) 22 456 7890
+				.c-header__searh
+					form(action="#")
+						.input.search
+							input(type="text" placeholder="Escribe lo que buscas")
+						.icon
+							span
+				.clearfix
+	.c-header__nav
+		.c-inner
+			nav
+				ul
+					each item in ['Home', 'Quienes somos', 'Plan de descuentos', 'Temas de interés', 'Contacto']
+						li
+							a(href="#") #{item}
+						
+
 
